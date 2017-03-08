@@ -1,2 +1,0 @@
-# Listabot
-> com.listabot.www
