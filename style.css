@@ -198,6 +198,10 @@ body {
 
 .navbar-default .active a {
   color:#333!important;
+
+}
+
+.nav .active a {
   background-color:#fff!important;
   border-bottom:0px!important;
 }
