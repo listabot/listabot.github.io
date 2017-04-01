@@ -96,7 +96,7 @@ h1 {
 
 h2 {
   font-size:1.6em;
-  font-weight:lighter;
+  font-weight:400;
 }
 
 h3 {
@@ -129,7 +129,7 @@ body {
 }
 
 .page-header {
-  margin-top:100px;
+  margin-top:5em;
   border:0  ;
 }
 .hero-phone{
@@ -155,7 +155,8 @@ body {
 }
 
 .in-eight-words {
-  margin:50px;
+  margin-top:20px;
+  margin-bottom:100px;
 }
 .badge {
   margin:40px;
@@ -174,7 +175,7 @@ body {
   margin-top:30px;
   margin-bottom:50px;
   font-size:1.2em;
-  font-weight:200;
+  font-weight:400;
 }
 
 .pricing h3 {
