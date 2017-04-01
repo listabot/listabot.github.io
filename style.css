@@ -101,8 +101,12 @@ h2 {
 
 h3 {
   font-size:3.6em;
-  font-weight: 200!important;
+  font-weight: 400!important;
   padding:20px;
+  background-image: url("timeline.svg");
+  background-repeat:no-repeat;
+  background-size: 100% 2px;
+  background-position: bottom center
 }
 
 html {
@@ -173,7 +177,11 @@ body {
   font-weight:200;
 }
 
-.features td {
+.pricing h3 {
+  margin-bottom:30px;
+}
+
+.pricing td {
   border:none!important;
   font-size:1.2em;
   padding:20px;
