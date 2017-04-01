@@ -201,7 +201,7 @@ body {
 
 }
 
-.nav .active a {
+.navbar-default .navbar-nav>.active>a {
   background-color:#fff!important;
   border-bottom:0px!important;
 }
