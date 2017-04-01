@@ -225,6 +225,10 @@ body {
   margin: 0 auto;
 }
 
+.fb-like {
+  margin-bottom:30px;
+}
+
 .logo {
   float:left;
   width:25px;
