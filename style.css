@@ -32,6 +32,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /** Ultra Light */
 @font-face {
   font-family: "San Francisco";
@@ -191,6 +192,22 @@ body {
 
 .navbar-default .active a {
   color:#333!important;
+}
+
+.pricing tr {
+  height:70px!important;
+}
+
+.pricing td {
+  font-size:1.5em;
+  font-weight:400;
+  
+}
+.special {
+  background-color:#ea2b6c;
+  padding:10px;
+  color:#fff;
+  border-radius:5px;
 }
 
 .logo {
