@@ -196,7 +196,7 @@ body {
   color:#fff!important;
 }
 
-.navbar-default .active a {
+.active a {
   color:#333!important;
   background-color:#fff!important;
   border-bottom:0px!important;
