@@ -167,6 +167,8 @@ body {
 }
 
 .features ul {
+  margin-top:30px;
+  margin-bottom:50px;
   font-size:1.2em;
   font-weight:200;
 }
@@ -201,13 +203,18 @@ body {
 .pricing td {
   font-size:1.5em;
   font-weight:400;
-  
+  padding-right:2em;
 }
 .special {
   background-color:#ea2b6c;
   padding:10px;
   color:#fff;
   border-radius:5px;
+}
+
+.row img {
+  padding-top:30px;
+  padding-bottom:30px;
 }
 
 .logo {
