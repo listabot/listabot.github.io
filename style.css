@@ -222,6 +222,9 @@ body {
   font-size:0.75em;
 }
 
+.copy{
+  margin-top:10px;
+}
 
 .supports {
   margin-top:50px;
@@ -239,6 +242,24 @@ body {
   margin-bottom:30px;
   width: 100%;
   text-align:center;
+}
+
+.social {
+  text-align:center;
+  width:100%;
+  height:40px;
+  margin-top:50px;
+  margin-bottom:150px;
+}
+
+.twitter {
+  width:30px;
+  float:center;
+}
+
+.fb {
+  width:30px;
+  float:center;
 }
 
 .brand-logo {
