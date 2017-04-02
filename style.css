@@ -205,8 +205,8 @@ body {
   border-bottom:0px!important;
 }
 
-.pricing tr {
-  height:70px!important;
+#pricing{
+  margin-bottom:100px;
 }
 
 .pricing td {
@@ -216,11 +216,16 @@ body {
 }
 .special {
   background-color:#ea2b6c;
-  padding:10px;
+  padding:5px;
   color:#fff;
   border-radius:5px;
+  font-size:0.75em;
 }
 
+
+.supports {
+  margin-top:50px;
+}
 .row img {
   padding-top:30px;
   padding-bottom:30px;
@@ -236,9 +241,6 @@ body {
   text-align:center;
 }
 
-.logo {
-  float:left;
-  width:25px;
-  height:25px;
-  margin-top:-0.25em;
+.brand-logo {
+  margin-left:10px;
 }
