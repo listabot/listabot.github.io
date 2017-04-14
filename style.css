@@ -188,6 +188,18 @@ body {
   color:#fff!important;
 }
 
+.navbar-nav>.open>a {
+  background-color:#000!important;
+}
+
+.dropdown-menu>li> a:hover {
+  color:#000!important;
+}
+
+.dropdown-menu {
+  background-color:#000;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
   border: 1px solid #fff!important
 }
