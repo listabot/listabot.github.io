@@ -79,37 +79,6 @@ table {
     font-family: "San Francisco"   
 }
 
-h1 { font-weight: 700; }
-h2 { font-weight: 600; }
-/*h3 { font-weight: 500; }*/
-p { font-weight: 400; }
-p.thin { font-weight: 200; }
-p.ultralight { font-weight: 100; }
-
-h1 {
-  font-size:2.0em;
-  text-align:center;
-  margin-top:-40px;
-  margin:10px;
-  width:100%;
-}
-
-h2 {
-  font-size:1.6em;
-  font-weight:400;
-}
-
-h3 {
-  font-size:3.6em;
-  font-weight: 400!important;
-  padding:20px;
-  background-image: url("timeline.svg");
-  background-repeat:no-repeat;
-  background-size: 100% 2px;
-  background-position: bottom center;
-  margin-bottom:50px;
-}
-
 html {
   position: relative;
   min-height: 100%;
@@ -128,59 +97,36 @@ body {
   margin-bottom: 60px;
 }
 
-.page-header {
-  margin-top:5em;
-  border:0  ;
-}
-.hero-phone{
-  margin: 0 auto;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #f0f0f0;
+p { font-weight: 400; }
+p.thin { font-weight: 200; }
+p.ultralight { font-weight: 100; }
+
+h1 {
+  font-size:2.5em;
+  text-align:center;
+  margin:10px;
+  width:100%;
+  font-weight: 700; 
 }
 
-#top-navigation-wrapper {
-  background-color:#007aff;
-  padding:5px;
-  color:#fff;
+h2 {
+  font-size:1.6em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size:3.6em;
+  font-weight: 400;
+  padding:10px;
+  background-image: url("timeline.svg");
+  background-repeat:no-repeat;
+  background-size: 100% 2px;
+  background-position: bottom center;
+  margin-bottom:50px;
 }
 
 #header {
   background-color:#eee;
-}
-
-.in-eight-words {
-  margin-top:20px;
-  margin-bottom:60px;
-}
-.badge {
-  margin:40px;
-}
-
-.footer {
-  font-size:13px;
-  padding-top:20px;
-}
-
-.features h2{
-  margin-top:100px;
-}
-
-.features ul {
-  margin-top:30px;
-  margin-bottom:50px;
-  font-size:1.2em;
-  font-weight:400;
-}
-
-.pricing td {
-  border:none!important;
-  font-size:1.2em;
-  padding:20px;
 }
 
 .navbar-default  {
@@ -188,16 +134,20 @@ body {
   color:#fff!important;
 }
 
+.navbar-toggle button:hover {
+  background-color:#333;
+}
+
 .navbar-nav>.open>a {
-  background-color:#000!important;
+  background-color:#333!important;
 }
 
 .dropdown-menu>li> a:hover {
-  color:#000!important;
+  color:#333!important;
 }
 
 .dropdown-menu {
-  background-color:#000;
+  background-color:#333;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -217,6 +167,60 @@ body {
   border-bottom:0px!important;
 }
 
+.page-header {
+  margin-top:5em;
+  border:0  ;
+}
+
+.hero-phone{
+  margin: 0 auto;
+  max-height:40%;
+}
+
+#top-navigation-wrapper {
+  background-color:#007aff;
+  padding:5px;
+  color:#fff;
+}
+
+.in-eight-words {
+  margin-top:20px;
+  margin-bottom:60px;
+}
+.badge {
+  margin:40px;
+}
+
+.brand-logo {
+  margin-left:10px;
+}
+
+.appstore-badge {
+  padding:20px;
+}
+
+.footer {
+  font-size:13px;
+  padding-top:20px;
+}
+
+.features h2 {
+  margin-top:100px;
+}
+
+.features ul {
+  margin-top:30px;
+  margin-bottom:50px;
+  font-size:1.2em;
+  font-weight:400;
+}
+
+.pricing td {
+  border:none!important;
+  font-size:1.2em;
+  padding:20px;
+}
+
 #pricing{
   margin-bottom:100px;
 }
@@ -226,28 +230,17 @@ body {
   font-weight:400;
   padding-right:2em;
 }
+
+.appstore-badge {
+  margin: 0 auto;
+}
+
 .special {
   background-color:#ea2b6c;
   padding:5px;
   color:#fff;
   border-radius:5px;
   font-size:0.75em;
-}
-
-.copy{
-  margin-top:10px;
-}
-
-.supports {
-  margin-top:50px;
-}
-.row img {
-  padding-top:30px;
-  padding-bottom:30px;
-}
-
-.appstore-badge {
-  margin: 0 auto;
 }
 
 .fb-like {
@@ -274,6 +267,18 @@ body {
   float:center;
 }
 
-.brand-logo {
-  margin-left:10px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f0f0f0;
+}
+
+.copy{
+  margin-top:10px;
+}
+
+.supports {
+  margin-top:50px;
 }
