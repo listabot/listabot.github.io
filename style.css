@@ -196,7 +196,12 @@ h3 {
 }
 
 .appstore-badge {
-  padding:20px;
+  padding:20px!important;
+  margin: 0 auto;
+}
+
+.row img {
+  padding:5px;
 }
 
 .footer {
@@ -221,18 +226,10 @@ h3 {
   padding:20px;
 }
 
-#pricing{
-  margin-bottom:100px;
-}
-
 .pricing td {
   font-size:1.5em;
   font-weight:400;
   padding-right:2em;
-}
-
-.appstore-badge {
-  margin: 0 auto;
 }
 
 .special {
@@ -277,8 +274,4 @@ h3 {
 
 .copy{
   margin-top:10px;
-}
-
-.supports {
-  margin-top:50px;
 }
