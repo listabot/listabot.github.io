@@ -118,10 +118,6 @@ h3 {
   font-size:3.6em;
   font-weight: 400;
   padding:10px;
-  background-image: url("timeline.svg");
-  background-repeat:no-repeat;
-  background-size: 100% 2px;
-  background-position: bottom center;
   margin-bottom:50px;
 }
 
