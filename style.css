@@ -119,10 +119,12 @@ h3 {
   font-weight: 600;
   padding:10px;
   margin-bottom:50px;
+  border-bottom:5px!important;
 }
 
 h3 a {
   color:#333;
+  
 }
 
 a {
@@ -186,19 +188,14 @@ a {
 }
 
 .hero-phone{
-  margin: 0 auto;
-  max-height:40%;
+  margin: 0 auto 30px;
+  max-height:45%;
 }
 
 #top-navigation-wrapper {
   background-color:#007aff;
   padding:5px;
   color:#fff;
-}
-
-.in-eight-words {
-  margin-top:30px;
-  margin-bottom:60px;
 }
 
 .badge {
@@ -210,8 +207,8 @@ a {
 }
 
 .appstore-badge {
-  padding:20px!important;
-  margin: 0 auto;
+  padding:20px;
+  margin: 2.0em auto 2.0em auto;
 }
 
 .row img {
@@ -228,18 +225,6 @@ a {
   margin-bottom:50px;
   font-size:1.2em;
   font-weight:400;
-}
-
-.pricing td {
-  border:none!important;
-  font-size:1.2em;
-  padding:20px;
-}
-
-.pricing td {
-  font-size:1.5em;
-  font-weight:400;
-  padding-right:2em;
 }
 
 .special {
