@@ -116,16 +116,33 @@ h2 {
 
 h3 {
   font-size:3.6em;
-  font-weight: 400;
+  font-weight: 600;
   padding:10px;
   margin-bottom:50px;
+}
+
+h3 a {
+  color:#333;
+}
+
+a {
+  text-decoration:none!important;
 }
 
 #header {
   background-color:#eee;
 }
 
-.navbar-default  {
+#store {
+  margin:50px;
+}
+
+
+#features,  {
+  margin-bottom:100px;
+}
+
+.navbar-default {
   background-color:#007aff!important;
   color:#fff!important;
 }
@@ -180,9 +197,10 @@ h3 {
 }
 
 .in-eight-words {
-  margin-top:20px;
+  margin-top:30px;
   margin-bottom:60px;
 }
+
 .badge {
   margin:40px;
 }
@@ -203,10 +221,6 @@ h3 {
 .footer {
   font-size:13px;
   padding-top:20px;
-}
-
-.features h2 {
-  margin-top:100px;
 }
 
 .features ul {
@@ -268,6 +282,6 @@ h3 {
   background-color: #f0f0f0;
 }
 
-.copy{
+.copy {
   margin-top:10px;
 }
