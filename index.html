@@ -75,7 +75,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="in-eight-words row text-center">
+      <div class="text-center">
         <h1>Simplify.</h1>
         <h2>Name Your Project.</h2> 
         <h2>Add A Task.</h2>
@@ -85,7 +85,8 @@
         </div>
       </div>
     </div>
-    <h3 id="features" class="text-center"><a name="features">Features</a></h3>
+    <div id="features" class="container-fluid">
+    <h3 class="text-center"><a name="features">Features</a></h3>
     <div class="container">
       <div class="row text-center">
         <img class="img" height="574" src="assets/site/1242x2208-tasks.png" alt="Create multiple active projects with different hourly rates">
@@ -165,8 +166,10 @@
         });
         
         // Closes the Responsive Menu on Menu Item Click
-        $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-collapse ul li a').click(function(e) {
+          if(!$(e.target).hasClass("dropdown-toggle")) {
             $('.navbar-toggle:visible').click();
+          }
         });
       });
       </script>
