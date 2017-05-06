@@ -86,10 +86,10 @@ html {
 
 body {
   -webkit-text-size-adjust: none;
-/*  background-color:#eeeeee;*/
   color:#a9a9a9; margin:auto;
-  font:  1em "San Francisco", sans-serif;
-  color:#333;
+  font:  1.1em "San Francisco", sans-serif;
+  color:#212121;
+  letter-spacing:0.02em;
 }
 
 body {
@@ -100,6 +100,23 @@ body {
 p { font-weight: 400; }
 p.thin { font-weight: 200; }
 p.ultralight { font-weight: 100; }
+
+.dark-primary-color    { background: #007aff; }
+.default-primary-color { background: #03A9F4; }
+.light-primary-color   { background: #B3E5FC; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FFEB3B; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+.secondary-bg {
+  background-color:#111; 
+  color:#fff;
+}
+.third-bg {
+  background-color:#fff; 
+  color:#000;
+}
 
 h1 {
   font-size:2.5em;
@@ -117,30 +134,30 @@ h2 {
 h3 {
   font-size:3.6em;
   font-weight: 600;
-  padding:10px;
-  margin-bottom:50px;
-  border-bottom:5px!important;
 }
 
-h3 a {
-  color:#333;
-  
+h4 {
+  font-size:1.5em;
+  font-weight: 600;
 }
 
 a {
   text-decoration:none!important;
 }
 
-#header {
-  background-color:#eee;
+#home {
+  padding-top:5em;
+  padding-bottom:5em;
 }
 
-#store {
-  margin:50px;
+#features, #pricing, #video {
+  padding-top:5em;
+  padding-bottom:5em;
 }
 
-#features,  {
-  margin-bottom:100px;
+.featured {
+  padding-top:2em;
+  padding-bottom:2em;
 }
 
 .navbar-default {
@@ -148,8 +165,16 @@ a {
   color:#fff!important;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background: none;
+}
+
+.navbar-toggle {
+  border:none;
+}
+
 .navbar-toggle button:hover {
-  background-color:#333;
+  background:#ffeb3b;
 }
 
 .navbar-nav>.open>a {
@@ -168,14 +193,27 @@ a {
   border: 1px solid #fff!important
 }
 
+.navbar-default{
+  border-bottom:none!important;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse
+    {
+      background-color:rgba(0, 122, 255, 0.25);
+      border:0px;
+      border:none;
+    }
+}
+
 .navbar-default a {
   color:#fff!important;
 }
 
 .active a {
-  color:#333!important;
-  background-color:#fff!important;
-  border-bottom:0px!important;
+  color:#fff!important;
+  background-color:transparent!important;
+
 }
 .navbar-default {
   border-bottom:0px!important;
@@ -186,10 +224,17 @@ a {
   border:0  ;
 }
 
-.hero-phone{
-  margin: 0 auto 30px;
-  max-height:45%;
+.primary-phone{
+  margin: 0 auto 0px;
+  max-height:70%;
 }
+
+@media only screen and (max-width : 480px) {
+  .screenshot{
+    height:30%;
+  }
+}
+
 
 #top-navigation-wrapper {
   background-color:#007aff;
@@ -208,10 +253,6 @@ a {
 .appstore-badge {
   padding:20px;
   margin: 2.0em auto 2.0em auto;
-}
-
-.row img {
-  padding:5px;
 }
 
 .footer {
@@ -249,12 +290,12 @@ a {
 }
 
 .twitter {
-  width:30px;
+  width:50px;
   float:center;
 }
 
 .fb {
-  width:30px;
+  width:50px;
   float:center;
 }
 
@@ -268,4 +309,41 @@ a {
 
 .copy {
   margin-top:10px;
+}
+
+.featured-item {
+  padding-top:1em;
+  padding-bottom:1em;
+  font-weight: 100;
+  letter-spacing:0.01em;
+}
+
+.featured-item-heading {
+  font-size:1.75em;
+  font-weight: 100;
+  padding-bottom:0.5em;
+  padding-top:0.5em;
+  color:#aaa;
+}
+
+ ol.breadcrumb {
+  background:transparent;
+
+}
+
+.featured-item img {
+  max-height:45%;
+}
+
+.feature-selector {
+  padding-top:2em;
+}
+
+.hidden { display:none;}
+
+.device-mockup.iphone6_plus.portrait > .device > .screen, .device-mockup.iphone6_plus > .device > .screen {
+    top: 11%!important;
+    bottom: 11.58%;
+    left: 5.97%;
+    right: 5.97%
 }
