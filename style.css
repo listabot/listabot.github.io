@@ -106,7 +106,7 @@ p.ultralight { font-weight: 100; }
 .default-primary-color { background: #03A9F4; }
 .light-primary-color   { background: #B3E5FC; }
 .text-primary-color    { color: #FFFFFF; }
-.accent-color          { background: #FFEB3B; }
+.accent-color          { background: #ff9800; }
 .primary-text-color    { color: #212121; }
 .secondary-bg {background-color:#111; color:#fff;}
 .third-bg {
@@ -174,11 +174,12 @@ a {
 }
 
 .navbar-nav>.open>a {
-  background-color:#333!important;
+  background-color:#1a1a1a!important;
 }
 
 .dropdown-menu>li> a:hover {
-  color:#fff!important;
+  color:#1a1a1a!important;
+  background-color:#ff9800!important;
 }
 
 .dropdown-menu {
