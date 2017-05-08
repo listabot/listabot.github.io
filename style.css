@@ -335,7 +335,7 @@ div.featured-item {
   margin-left:-2em;
 }
 
-@media (max-width: 736px) {
+@media (max-width: 800px) {
   .navbar-collapse
     {
       background-color:#1a1a1a;
@@ -348,7 +348,7 @@ div.featured-item {
     }
     
     div.featured-item {
-      padding-bottom:2em;
+      padding-bottom:2em!important;
     }
     
     .featured-item i {
