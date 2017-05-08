@@ -114,6 +114,10 @@ p.ultralight { font-weight: 100; }
   color:#000;
 }
 
+.accent-text {
+  color:#ff9800;
+}
+
 h1 {
   font-size:2.5em;
   text-align:center;
@@ -124,11 +128,6 @@ h1 {
 
 h2 {
   font-size:1.6em;
-  font-weight: 600;
-}
-
-h3 {
-  font-size:3.6em;
   font-weight: 600;
 }
 
@@ -151,9 +150,10 @@ a {
   padding-bottom:5em;
 }
 
-.featured {
-  padding-top:2em;
-  padding-bottom:2em;
+#features h3, #pricing h3, #video h3 {
+  font-size:3.6em;
+  font-weight: 600;
+  padding-bottom:0.5em;
 }
 
 .navbar-default {
@@ -194,15 +194,6 @@ a {
   border-bottom:none!important;
 }
 
-@media (max-width: 767px) {
-  .navbar-collapse
-    {
-      background-color:#1a1a1a;
-      border:0px;
-      border:none;
-    }
-}
-
 .navbar-default a {
   color:#fff!important;
 }
@@ -219,12 +210,6 @@ a {
 .primary-phone{
   margin: 0 auto 0px;
   max-height:70%;
-}
-
-@media only screen and (max-width : 480px) {
-  .screenshot{
-    height:30%;
-  }
 }
 
 #top-navigation-wrapper {
@@ -306,11 +291,8 @@ footer a {
   margin-top:10px;
 }
 
-.featured-item {
-  padding-top:1em;
-  padding-bottom:1em;
-  font-weight: 100;
-  letter-spacing:0.01em;
+div.featured-item {
+  padding-bottom:7em;
 }
 
 .featured-item-heading {
@@ -318,16 +300,16 @@ footer a {
   font-weight: 100;
   padding-bottom:0.5em;
   padding-top:0.5em;
+  padding-left:1em;
   color:#aaa;
 }
 
- ol.breadcrumb {
-  background:transparent;
-
-}
-
-.featured-item img {
-  max-height:45%;
+.featured-item i {
+  font-size:1.25em!important;
+  font-weight: 100;
+  padding-bottom:0.5em;
+  padding-top:1em;
+  float:left;
 }
 
 .feature-selector {
@@ -341,4 +323,43 @@ footer a {
     bottom: 11.58%;
     left: 5.97%;
     right: 5.97%
+}
+
+.device-container {
+  padding-right:1em;
+  margin-left:-2em;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse
+    {
+      background-color:#1a1a1a;
+      border:0px;
+      border:none;
+    }
+    
+    .screenshot{
+      height:30%;
+    }
+    
+    div.featured-item {
+      padding-bottom:2em;
+    }
+    
+    .featured-item i {
+      font-size:1.25em!important;
+      font-weight: 100;
+      padding-bottom:0.5em;
+      padding-top:0.5em;
+      float:left;
+    }
+    
+    .featured-item-heading {
+      font-size:1.25em!important;
+      font-weight: 100;
+      padding-bottom:0.5em;
+      padding-top:0.5em;
+      margin-left:0.5em!important;
+      color:#aaa;
+    }
 }

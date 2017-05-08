@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Author" content="©2017 Philip Broadway">
-  <meta name="description" content="Listabot is a time tracking app that helps you track your billable hours & generate your invoices">
+  <meta name="description" content="Listabot is a time tracking app that helps you track your billable hours &amp; generate your invoices">
   <link rel="manifest" href="/assets/manifest.json">
   <link rel="stylesheet" href="style.css" type="text/css" media="screen">
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -28,6 +28,29 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+  <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
+  <script>
+          var APP_ID = 1212689677
+      </script>
+      <script id="app-microdata" type="x-tmpl-mustache">
+        <div itemscope itemtype="http://schema.org/SoftwareApplication">
+          <span itemprop="name">{{name}}</span> -
+ 
+          REQUIRES <span itemprop="operatingSystem">{{os}}</span>
+          <link itemprop="applicationCategory" href="http://schema.org/GameApplication"/>
+ 
+          RATING:
+          <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+            <span itemprop="ratingValue">{{rating}}</span> (
+            <span itemprop="ratingCount">{{ratingCount}}</span> ratings )
+          </div>
+ 
+          <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            Price: $<span itemprop="price">{{price}}</span>
+            <meta itemprop="priceCurrency" content="USD" />
+          </div>
+        </div>
+      </script>
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -46,7 +69,7 @@
            <ul class="nav navbar-nav"></ul>
            <ul class="nav navbar-nav pull-right">
              <li class="active"><a href="#home">Get The App</a></li>
-             <!-- <li><a href="#features">Features</a></li> -->
+             <li><a href="#features">Features</a></li>
               <li role="presentation" class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                     Support <span class="caret"></span>
@@ -76,7 +99,7 @@
         </div>
       </div>
     </div>
-    <!-- <div id="features" class="container-fluid secondary-bg">
+    <div id="features" class="container-fluid secondary-bg">
     <div class="container">
       <div class="row">
         <h3 name="features">Features</h3>
@@ -99,12 +122,14 @@
       <div class="row">
         <div class="featured-item multi-tasking">
           <div class="row col-md-6">
+            <i class="icon-list accent-text"></i>
             <p class="featured-item-heading" data-target="multi-tasking">Project Management</p>
-            <p>Unlimited projects with as many concurrent tasks as you can handle.</p>
+            <p>Unlimited projects.<br /> Unlimited concurrent active &amp; inactive tasks.</p>
           </div>
         </div>
         <div class="featured-item calendar-integration">
           <div class="row col-md-6">
+            <i class="icon-clock accent-text"></i>
             <p class="featured-item-heading" data-target="hourly-rates">Hourly Rates</p>
             <p>Hourly rate can be added anytime to any project.</p>
             <p>All hours &amp; billable amounts are realtime.<p/>
@@ -112,43 +137,52 @@
         </div>
         <div class="featured-item calendar-integration">
           <div class="row col-md-6">
+            <i class="icon-calendar accent-text"></i>
             <p class="featured-item-heading" data-target="calendar-integration">Calendar Integration</p>
             <p>Calendar sync puts the tasks you work on with the native calendar you choose.<p/>
           </div>
         </div>
         <div class="featured-item reminders">
           <div class="row col-md-6">
+            <i class="icon-exclamation accent-text"></i>
             <p class="featured-item-heading" data-target="reminders">Reminders</p>
             <p>Optional active task reminders to help avoid spending too long on tasks.</p>
           </div>
         </div>
         <div class="featured-item invoices">
           <div class="row col-md-6">
-            <p class="featured-item-heading" data-target="invoices">Invoices</p>
+            <i class="icon-envelope-open accent-text"></i>
+            <p class="featured-item-heading" data-target="invoices">Invoicing</p>
             <p>Email CSV or HTML invoices after picking any tracked time across any of your projects.<p/>
+          </div>
+        </div>
+        <div class="featured-item invoices">
+          <div class="row col-md-6">
+            <i class="icon-chart accent-text"></i>
+            <p class="featured-item-heading" data-target="invoices">Analytics</p>
+            <p>Charts for analyzing real-time earnings &amp; time utilization<p/>
           </div>
         </div>
       </div>
     </div>
     </div>
-    </div> -->
-    <!-- <div id="pricing" class="container-fluid third-bg">
+    </div>
+    <div id="pricing" class="container-fluid third-bg">
       <div class="container">
-        <div class="row">
-          <h3>Availability</h3>
+        <div id="app-price" class="row text-center">
+          
         </div>
         <div class="row text-center">
-
-        </div>
-        <div class="row">
           <a href="http://itunes.apple.com/us/app/listabot/id1212689677?mt=8"><img class="appstore-badge" src="appstoreBadge.svg"></a>
         </div>
+        <div id="social" class="social">
+          <a href="http://facebook.com/listabot"><img class="fb" src="FB-fLogo-Blue-broadcast.png"></a>
+          <a href="http://twitter.com/listabot"><img class="twitter" src="Twitter_Logo_Blue.png"></a>
+        </div>
       </div>
-    </div> -->
-      <!-- <div id="social" class="social">
-        <a href="http://facebook.com/listabot"><img class="fb" src="FB-fLogo-Blue-broadcast.png"></a>
-        <a href="http://twitter.com/listabot"><img class="twitter" src="Twitter_Logo_Blue.png"></a>
-      </div> -->
+    </div>
+      
+    <div id="app-microdata" class="hidden-micro-data"></div>
     <footer class="footer">
       <div class="container">
         <div class="pull-left"><a href="http://philipbroadway.com">
@@ -236,6 +270,33 @@
             $(e.target).parent().addClass("active");
           }
         })
+        
+        var generateAppMicroData = function() {
+            var template = $('#app-microdata').html();
+     
+            $.ajax({
+              url:"https://itunes.apple.com/lookup?id=" + APP_ID,
+              dataType:"json"
+            }).done(function( data ) {
+                console.log(data)
+ 
+              if (data != nil && data["results"] != nil && data["results"].count > 0) {
+         
+                var app = data["results"][0]
+         
+                var templateData = {
+                  "rating" : app["averageUserRatingForCurrentVersion"],
+                  "ratingCount" : app["userRatingCountForCurrentVersion"],
+                  "price" : app["formattedPrice"]
+                }
+         
+                Mustache.parse(template);
+                var rendered = Mustache.render(template, templateData);
+                $('#micro-data').html(rendered);
+              }
+              });
+          }
+          generateAppMicroData()
         
       });
       </script>
