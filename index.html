@@ -109,8 +109,12 @@
               <div class="device-mockup iphone6_plus portrait white">
                   <div class="device">
                       <div class="screen">
-                          <img src="assets/img/projects.png" class="img-responsive multi-tasking" alt="">
-                          <img src="assets/img/calendar-integration.png" class="img-responsive calendar-integration" alt="">
+                          <img src="assets/img/multi-tasking.png" class="img-responsive multi-tasking-img" alt="">
+                          <img src="assets/img/calendar-integration.png" class="img-responsive calendar-integration-img" alt="">
+                          <img src="assets/img/hourly-rates.png" class="img-responsive hourly-rates-img" alt="">
+                          <img src="assets/img/reminders.png" class="img-responsive reminders-img" alt="">
+                          <img src="assets/img/invoices.png" class="img-responsive invoices-img" alt="">
+                          <img src="assets/img/analytics.png" class="img-responsive analytics-img" alt="">
                       </div>
                       <div class="button">
                       </div>
@@ -120,46 +124,46 @@
       </div>
 
       <div class="row">
-        <div class="featured-item multi-tasking">
+        <div class="featured-item">
           <div class="row col-md-6">
             <i class="icon-list accent-text"></i>
-            <p class="featured-item-heading" data-target="multi-tasking">Project Management</p>
+            <p class="featured-item-heading multi-tasking" data-target="multi-tasking">Project Management</p>
             <p>Unlimited projects.<br /> Unlimited concurrent active &amp; inactive tasks.</p>
           </div>
         </div>
-        <div class="featured-item calendar-integration">
+        <div class="featured-item">
           <div class="row col-md-6">
             <i class="icon-clock accent-text"></i>
-            <p class="featured-item-heading" data-target="hourly-rates">Hourly Rates</p>
+            <p class="featured-item-heading hourly-rates" data-target="hourly-rates">Hourly Rates</p>
             <p>Hourly rate can be added anytime to any project.</p>
             <p>All hours &amp; billable amounts are realtime.<p/>
           </div>
         </div>
-        <div class="featured-item calendar-integration">
+        <div class="featured-item">
           <div class="row col-md-6">
             <i class="icon-calendar accent-text"></i>
-            <p class="featured-item-heading" data-target="calendar-integration">Calendar Integration</p>
+            <p class="featured-item-heading calendar-integration" data-target="calendar-integration">Calendar Integration</p>
             <p>Calendar sync puts the tasks you work on with the native calendar you choose.<p/>
           </div>
         </div>
-        <div class="featured-item reminders">
+        <div class="featured-item">
           <div class="row col-md-6">
             <i class="icon-exclamation accent-text"></i>
-            <p class="featured-item-heading" data-target="reminders">Reminders</p>
+            <p class="featured-item-heading reminders" data-target="reminders">Reminders</p>
             <p>Optional active task reminders to help avoid spending too long on tasks.</p>
           </div>
         </div>
-        <div class="featured-item invoices">
+        <div class="featured-item">
           <div class="row col-md-6">
             <i class="icon-envelope-open accent-text"></i>
-            <p class="featured-item-heading" data-target="invoices">Invoicing</p>
+            <p class="featured-item-heading invoices" data-target="invoices">Invoicing</p>
             <p>Email CSV or HTML invoices after picking any tracked time across any of your projects.<p/>
           </div>
         </div>
-        <div class="featured-item invoices">
+        <div class="featured-item">
           <div class="row col-md-6">
             <i class="icon-chart accent-text"></i>
-            <p class="featured-item-heading" data-target="invoices">Analytics</p>
+            <p class="featured-item-heading analytics" data-target="analytics">Analytics</p>
             <p>Charts for analyzing real-time earnings &amp; time utilization<p/>
           </div>
         </div>
@@ -243,33 +247,50 @@
            });
         });
         
+        var currentFeature = 0
+        
+        var features = [
+          "multi-tasking",
+          "hourly-rates",
+          "calendar-integration",
+          "reminders",
+          "invoices",
+          "analytics"
+        ]
+        
+        var selectFeature = function(named) {
+          for (var i = 0; i < features.length; i++) {
+            $("." + features[i]).removeClass("active");
+            $("." + features[i] + "-img").addClass("hidden");
+          }
+          
+          $("." + named).addClass("active");
+          $("." + named + "-img").removeClass("hidden");
+          
+          currentFeature = features.indexOf(named)
+        }
+        
+        $('.featured-item-heading').click(function(e){
+          
+          e.preventDefault();
+          selectFeature($(e.currentTarget).data("target"));
+          
+          window.clearInterval(slideshow);
+        })
+        
+        var nextFeature = function() {
+          currentFeature = currentFeature + 1 == features.length ? 0 : currentFeature + 1;
+          selectFeature(features[currentFeature]);
+        }
+        
+        var slideshow = window.setInterval(nextFeature, 3000);
+        selectFeature(features[currentFeature]);
+        
         $('.navbar-collapse ul li a').click(function(e) {
           if(!$(e.target).hasClass("dropdown-toggle")) {
             $('.navbar-toggle:visible').click();
           }
         });
-
-        var features = [
-          "multi-tasking",
-          "calendar-integration",
-          "reminders",
-          "invoices"
-        ]
-        
-        $('.feature-selector a').click(function(e){
-          
-          e.preventDefault();
-          
-          for (var i = 0; i < features.length; i++) {
-            $("."+features[i]).addClass("hidden")
-          }
-          var selected = $(e.currentTarget).data("target")
-          if (selected) {
-            $('.feature-selector li').removeClass("active");
-            $("."+selected).removeClass("hidden");
-            $(e.target).parent().addClass("active");
-          }
-        })
         
         var generateAppMicroData = function() {
             var template = $('#app-microdata').html();
@@ -280,7 +301,7 @@
             }).done(function( data ) {
                 console.log(data)
  
-              if (data != nil && data["results"] != nil && data["results"].count > 0) {
+              if (data != nil && data["results"] != nil && data["results"].length > 0) {
          
                 var app = data["results"][0]
          

@@ -296,12 +296,17 @@ div.featured-item {
 }
 
 .featured-item-heading {
+  cursor: pointer;
   font-size:1.75em;
   font-weight: 100;
   padding-bottom:0.5em;
   padding-top:0.5em;
   padding-left:1em;
   color:#aaa;
+}
+
+.featured-item-heading.active {
+  color:#ff9800;
 }
 
 .featured-item i {
